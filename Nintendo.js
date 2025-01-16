@@ -27,6 +27,12 @@ export default function Nintendo() {
       <Text style={ estilos.descricao }>A história de "Tears of the Kingdom" começa um tempo depois do fim de "Breath of the wild". Enquanto o povo do reino fictício de Hyrule reconstrói suas vidas, um antigo espírito maligno escapa de um encantamento milenar e joga toda a região no caos novamente.</Text>
     </View>
 
+    <View style={estilos.cardMario}>
+            <Text style={estilos.titulo}>Mario Party Jamboree</Text>
+            <Image source={mario} style={estilos.img}/>
+            <Text style={estilos.descricao}>A jogabilidade de Super Mario Party Jamboree mescla um jogo de tabuleiro com minigames. No modo principal: "Mario Party", até quatro jogadores podem competir, rolando dados para se locomoverem pelo tabuleiro em busca de ganhar moedas e adquirir estrelas para vencer o jogo.</Text>
+        </View>
+
     </View>
   
   )
@@ -81,13 +87,31 @@ const estilos = StyleSheet.create({
     left: 40,
     top: 20,
     alignItems: 'center',
-    height:340,
+    height:360,
     width:"80%",
     backgroundColor:"white",
     borderRadius:15,
     padding:10,
     marginTop:20,
     marginBottom:50,
+    elevation:10,
+    shadowColor: 'red',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.5,
+    shadowRadius: 5,
+  },
+  cardMario:{
+    position: 'relative',
+    left: 40,
+    top: 20,
+    alignItems: 'center',
+    height:350,
+    width:"80%",
+    backgroundColor:"white",
+    borderRadius:15,
+    padding:10,
+    marginTop:20,
+    marginBottom:-10,
     elevation:10,
     shadowColor: 'red',
     shadowOffset: { width: 0, height: 3 },
