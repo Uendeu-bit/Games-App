@@ -27,16 +27,6 @@ const HomeScreen = ({ navigation }) => (
     <TouchableOpacity style={styles.button6} onPress={() => navigation.navigate('Bloodborne')}>
       <Text style={styles.buttonText}>veja mais</Text>
     </TouchableOpacity>
-    <Xbox/>
-    <TouchableOpacity style={styles.button7} onPress={() => navigation.navigate('Halo')}>
-      <Text style={styles.buttonText}>veja mais</Text>
-    </TouchableOpacity>
-    <TouchableOpacity style={styles.button8} onPress={() => navigation.navigate('Forza Horizon')}>
-      <Text style={styles.buttonText}>veja mais</Text>
-    </TouchableOpacity>
-    <TouchableOpacity style={styles.button9} onPress={() => navigation.navigate('Gears of Wars')}>
-      <Text style={styles.buttonText}>veja mais</Text>
-    </TouchableOpacity>
     
 
   </ScrollView>

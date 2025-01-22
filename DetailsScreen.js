@@ -193,7 +193,7 @@ const estilos = StyleSheet.create({
     alignItems:'center'
   },
   container: {
-    backgroundColor: '#ADD8E6',
+    backgroundColor: '#fff',
     width: "92%",
     alignItems:'center', 
     borderRadius: 10,
