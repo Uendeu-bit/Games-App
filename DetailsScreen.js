@@ -12,7 +12,7 @@ import smash7 from '../assets/fundosmash7.jpg'
 const DetailsScreen = () => (
   <ImageBackground source={require('../assets/fundoSmash.jpg')} style={estilos.containerTopo}>
     <ScrollView>
-      <View>
+      <View style={estilos.containerTopo}>
       <View style={estilos.container}>
       <Text style={estilos.texto}>
       Super Smash Bros. Ultimate é um game que faz justiça a seu nome com uma quantidade enorme de conteúdos. E não são quaisquer conteúdos: a Nintendo podia ter simplesmente “copiado e colado” todos os elementos que apareceram na série no passado, produzindo um game rápido para um público ávido por lançamentos — mas não foi isso o que encontramos aqui, felizmente.
@@ -188,17 +188,21 @@ export default DetailsScreen;
 
 const estilos = StyleSheet.create({
   containerTopo: {
-    width: 420,
+    width: "100%",
     height: "100%",
-    alignItems:'center'
+    alignItems:'center',
+    justifyContent:'center',
+   
   },
   container: {
     backgroundColor: '#fff',
-    width: "92%",
-    alignItems:'center', 
+    width: "95%",
+    flex:1,
+    alignItems:'center',
+    justifyContent:'center',
     borderRadius: 10,
     padding: 20,
-    margin: 10, 
+    margin: 5, 
     shadowColor: '#fff',
     shadowOffset: {
       width: 0,
@@ -219,10 +223,11 @@ const estilos = StyleSheet.create({
     fontSize: 24,
     color: '#000',
     textAlign: 'center',
-    marginBottom:35 
+    marginBottom:10,
+    marginTop:25 
   },
   img: {
-    width: 320,
+    width: "100%",
     height: 200,
     marginBottom: 10,
     elevation:20,

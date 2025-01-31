@@ -22,7 +22,7 @@ const DetailsScreen6 = () => (
   
 <ImageBackground source={require('../assets/wallpaperblood.jpg')} style={estilos.containerTopo}>
     <ScrollView>
-
+      
       <View style={estilos.containerLore}>
       <Text style={estilos.tituloLore}>O Túmulo dos Deuses</Text>
       <Text style={estilos.descricaoLore}>As masmorras do cálice foi onde tudo começou para a civilização Yharnam, um caçador companheiro Alfred, nos diz que: “o túmulo dos deuses esculpido abaixo de Yharnam, deve ser familiar para qualquer caçador” Esses labirintos são os restos de uma outra cultura os “Pthumerians”, que se foram há muito tempo, embora não estejam completamente extintos. Em algum momento os primeiros habitantes de Yharnam descobriram um cálice que concede o acesso ao labirinto Pthumeriano e começaram a explorar. Ele não estava vazio.</Text>
@@ -415,6 +415,7 @@ const DetailsScreen6 = () => (
       <Image source={gherman} style={estilos.image}/>
       <Text style={estilos.title}>Gehrman, the First Hunter</Text>
       </View>
+    
 
 
 
@@ -433,11 +434,12 @@ export default DetailsScreen6;
 
 const estilos = StyleSheet.create({
     containerTopo: {
-      width: 420,
+      width: "100%",
       height: "100%",
       alignItems:'center'
     },
     containerLore:{
+      width:"100%",
       flex:1,
       justifyContent: 'center',
       alignItems:'center'

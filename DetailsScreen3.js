@@ -8,21 +8,18 @@ import mapa from '../assets/mapa.jpg'
 
 const DetailsScreen3 = () => (
   <ImageBackground source={require('../assets/fundomario.jpg')} style={estilos.containerTopo}>
+      <ScrollView>
+        <View style={estilos.containerTopo}>
 
-    <ScrollView>
-          <View>
-
-          <View style={estilos.container}>
-
-          <Text style={estilos.texto}>
+        <View style={estilos.container}>
+        <Text style={estilos.texto}>
           Super Mario Party Jamboree é o mais novo capítulo da saga de jogos de tabuleiro e minigames com personagens de Mario trazendo uma série de novidades. Desenvolvido pela Nintendo, mais precisamente pelo estúdio Nintendo Cube, o título promete ser o maior da série com mais de 110 minigames e 22 personagens jogáveis, para disputar por sete tabuleiros e em novos modos inéditos. Super Mario Party Jamboree será lançado em 17 de outubro para Nintendo Switch, e conta com legendas em português do Brasil. Jogadores que adquirirem o game, tanto em mídia física quanto digital, receberão também três meses grátis do serviço por assinatura Nintendo Switch Online para multiplayer pela internet.
           </Text>
           <Image source={mario} style={estilos.img}/>
-
           </View>
 
-          <View style={estilos.container}>
 
+          <View style={estilos.container}>
           <Text style={estilos.titulo}>
           Gameplay e modos de jogos do Super Mario Party Jamboree
           </Text>
@@ -43,11 +40,9 @@ const DetailsScreen3 = () => (
           <Text style={estilos.texto}>
           Há também minigames mais elaborados dedicados a multiplayer local para duas a quatro pessoas: Rhythm Kitchen, em que jogadores cozinham conforme o ritmo; Toad's Item Factory, que utiliza os controles de movimento para guiar uma bola por um percurso de obstáculos; e Paratroopa Flight School, onde jogadores usam os Joy-Cons para fazer o movimento de bater asas.
           </Text>
-
           </View>
 
           <View style={estilos.container}>
-
           <Text style={estilos.titulo}>
           Personagens em Super Mario Party Jamboree
           </Text>
@@ -56,11 +51,6 @@ const DetailsScreen3 = () => (
           Super Mario Party Jamboree traz o maior elenco de um jogo da série Mario Party até hoje com 22 integrantes. Os personagens disponíveis incluem figuras como: Mario, Luigi, Peach, Bowser, Yoshi, Daisy, Wario, Waluigi, Bowser Jr., Rosalina Donkey Kong, Goomba, Koopa Troopa, Shy Guy, Birdo, Boo, Monty Mole, Toad, Toadette, Spike e, pela primeira vez na série, Pauline e Ninji.
           </Text>
           <Image source={personagens} style={estilos.img}/>
-
-          </View>
-
-          <View style={estilos.container}>
-
           <Text style={estilos.titulo}>
           Tabuleiros e minigames de Super Mario Party Jamboree
           </Text>
@@ -77,28 +67,18 @@ const DetailsScreen3 = () => (
           <Text style={estilos.texto}>
           Alguns dos minigames incluem corridas de Yoshis, martelar pregos em uma tábua de madeira com o Joy-Con, inclinar o controle para acertar uma bola em um buraco de minigolfe, cortar legumes gigantes para uma sopa e muito mais. Há também minigames que cobrem situações específicas no tabuleiro, como 1 vs 1, uma queda de braço com membros mecânicos entre participantes, ou 1 vs 3, como um jogador controlar uma bala de canhão Bullet Bill enquanto outros tentam escapar de sua trajetória.
           </Text>
-
           </View>
-
-          <Text style={estilos.texto}>
-                
-                </Text>
           
-                <Text style={estilos.texto}>
-                
-                </Text>
-          
-                <Text style={estilos.texto}>
-                
-                </Text>
-          
-                <Text style={estilos.texto}>
-                
-                </Text>
-
           </View>
-    </ScrollView>
-  </ImageBackground>
+  
+        
+        <Text style={estilos.texto}></Text>
+        
+
+
+      </ScrollView>
+  
+    </ImageBackground>
 );
 
 export default DetailsScreen3;
@@ -107,15 +87,19 @@ const estilos = StyleSheet.create({
   containerTopo: {
     width: "100%",
     height: "100%",
-    alignItems:'center'
+    alignItems:'center',
+    justifyContent:'center',
+   
   },
   container: {
     backgroundColor: '#fff',
-    width: "92%",
-    alignItems:'center', 
+    width: "95%",
+    flex:1,
+    alignItems:'center',
+    justifyContent:'center',
     borderRadius: 10,
     padding: 20,
-    margin: 10, 
+    margin: 5, 
     shadowColor: '#fff',
     shadowOffset: {
       width: 0,
@@ -131,14 +115,16 @@ const estilos = StyleSheet.create({
     textAlign: 'center',
     marginBottom:35 
   },
+  
   titulo: {
     fontSize: 24,
     color: '#000',
     textAlign: 'center',
-    marginBottom:35 
+    marginBottom:10,
+    marginTop:25 
   },
   img: {
-    width: 320,
+    width: "100%",
     height: 200,
     marginBottom: 10,
     elevation:20,

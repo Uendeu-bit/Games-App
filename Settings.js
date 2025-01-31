@@ -73,7 +73,7 @@ const SettingsScreen = () => (
 
 const estilos = StyleSheet.create({
   containerTopo: {
-    width: 420,
+    width: "100%",
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
@@ -95,9 +95,10 @@ const estilos = StyleSheet.create({
   },
   cardssd:{
     position: 'relative',
+    justifyContent:'center',
     alignItems: 'center',
     height:400,
-    width:"80%",    
+    width:"90%",    
     backgroundColor:"white",
     borderRadius:15,
     padding:10,
@@ -112,8 +113,9 @@ const estilos = StyleSheet.create({
   cardKratos:{
     position: 'relative',
     alignItems: 'center',
+    justifyContent:'center',
     height:450,
-    width:"80%",    
+    width:"90%",    
     backgroundColor:"white",
     borderRadius:15,
     padding:10,
@@ -146,20 +148,20 @@ const estilos = StyleSheet.create({
   preco: {
     fontWeight: 'bold',
     position: 'relative',
-    left: -77,
-    bottom:-25
+    left: -45,
+    bottom:25
   },
   precopros: {
     fontWeight: 'bold',
     position: 'relative',
-    left: -77,
-    bottom:-10
+    left: -40,
+    bottom:25
   },
   precoram: {
     fontWeight: 'bold',
     position: 'relative',
-    left: -77,
-    bottom:-75
+    left: -40,
+    bottom:25
   },
   img: {
     width: 170,

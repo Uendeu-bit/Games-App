@@ -15,7 +15,7 @@ import zelda10 from '../assets/zelda10.jpg'
 const DetailsScreen2 = () => (
   <ImageBackground source={require('../assets/fundoZelda.png')} style={estilos.containerTopo}>
   <ScrollView>
-    
+  
     <View style={estilos.overlay}>
             <Image source={zelda} style={estilos.image}/>
             <Text style={estilos.texto}>
@@ -143,23 +143,19 @@ const estilos = StyleSheet.create({
   containerTopo: {
     width: "100%",
     height: "100%",
-    alignItems:'center'
-  },
-  borda: {
-    borderWidth: 2, // Largura da borda
-    borderColor: '#2fd234', // Cor da borda
-    borderRadius: 25, // Bordas arredondadas (opcional)
-    padding: 10, // Espaçamento interno
+    
   },
   overlay: {
-    alignItems:'center',
+    width:"100%",
     height: "100%",
-    width:411,
     backgroundColor: 'rgba(0, 0, 0, 0.5)', // Cor preta com 50% de opacidade
+    alignItems:'center',
+    justifyContent:'center',
+    flex:1
   },
   texto: {
     paddingVertical:20,
-    width:360,
+    width:"80%",
     lineHeight:22,
     color: 'white',
     textAlign:'center',
@@ -168,7 +164,7 @@ const estilos = StyleSheet.create({
   },
   titulo: {
     paddingVertical:20,
-    width:360,
+    width:"80%",
     lineHeight:22,
     color: 'white',
     textAlign:'center',

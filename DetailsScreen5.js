@@ -142,7 +142,7 @@ const estilos = StyleSheet.create({
     alignContent: 'center',
     marginBottom: 10,
     fontStyle: 'italic',
-    color: 'white'
+    color: 'white',
   },
   image: {
     width: 350,

@@ -2,13 +2,13 @@ import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
 import Capa from '../assets/Nintendo.png';
-import Jogos from '../assets/img2.png';
+import Jogos from '../assets/img2.jpg';
 import Jogo from '../assets/zelda.jpg';
 import mario from '../assets/party.jpg'
 
 export default function Nintendo() {
   return(
-    <View>
+    <View style={estilos.container}>
 
     <View style={ estilos.containerTopo }>
       <Image source={ Capa } style={ estilos.topoImg } />
@@ -45,6 +45,12 @@ const estilos = StyleSheet.create({
     alignItems: "center",
     padding: 30
   },
+  container:{
+    width:"100%",
+    justifyContent:'center',
+    alignContent:'center'
+
+  },
   topoTitulo: {
     fontSize: 22,
     textShadowColor: '#000',
@@ -54,7 +60,8 @@ const estilos = StyleSheet.create({
     color: '#fff',
     marginBottom: 10,
     lineHeight: 30,
-    width: 180
+    width: "100%",
+    textAlign:'center'
   },
   topoDescricao: {
     color: '#fff',
@@ -69,7 +76,7 @@ const estilos = StyleSheet.create({
     left: 40,
     top: 20,
     alignItems: 'center',
-    height:285,
+    height:310,
     width:"80%",
     backgroundColor:"white",
     borderRadius:15,
@@ -87,7 +94,7 @@ const estilos = StyleSheet.create({
     left: 40,
     top: 20,
     alignItems: 'center',
-    height:360,
+    height:380,
     width:"80%",
     backgroundColor:"white",
     borderRadius:15,
@@ -105,7 +112,7 @@ const estilos = StyleSheet.create({
     left: 40,
     top: 20,
     alignItems: 'center',
-    height:350,
+    height:390,
     width:"80%",
     backgroundColor:"white",
     borderRadius:15,

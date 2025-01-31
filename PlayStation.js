@@ -62,8 +62,8 @@ const estilos = StyleSheet.create({
       fontWeight: 'bold',
       color: '#fff',
       marginBottom: 10,
-      width: 200,
-      height: 40
+      width: "100%",
+    textAlign:'center'
     },
     topoDescricao: {
       color: '#fff',
@@ -82,7 +82,8 @@ const estilos = StyleSheet.create({
         left: 40,
         top: 20,
         alignItems: 'center',
-        height:410,
+        justifyContent:'center',
+        height:430,
         width:"80%",    
         backgroundColor:"white",
         borderRadius:15,
@@ -100,7 +101,8 @@ const estilos = StyleSheet.create({
         left: 40,
         top: 20,
         alignItems: 'center',
-        height:410,
+        justifyContent:'center',
+        height:440,
         width:"80%",    
         backgroundColor:"white",
         borderRadius:15,
